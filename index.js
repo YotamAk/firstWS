@@ -1,8 +1,8 @@
-var achievements = require('./Achievements'),
-    http = require('http'),
-    express = require('express');
-
-    var app = express();
+const achievements = require('./Achievements'),
+      http         = require('http'),
+      express      = require('express');
+      port         = process.env.PORT || 3000;
+      app          = express();
 
     var a1 = new achievements(20, 'football');
     a1.plusMedals();
@@ -17,4 +17,4 @@ var achievements = require('./Achievements'),
     res.send(`a1.getAllData()`);
 });
 
-http.createServer(app).listen(3000);
+http.createServer(app).listen(port);

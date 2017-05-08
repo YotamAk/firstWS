@@ -17,7 +17,7 @@ class Achievements extends Emitter {
 
     minusMedals() {
         if(this.medals==0){
-        console.log(`Error: The number of medals is less than zero`);
+        console.log(`Error: The number of medals is less than 0`);
         }
         else{
         this.medals--;
