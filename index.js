@@ -17,4 +17,8 @@ const achievements = require('./Achievements'),
     res.send(`a1.getAllData()`);
 });
 
+<<<<<<< HEAD
 http.createServer(app).listen(port);
+=======
+http.createServer(app).listen(port);
+>>>>>>> adee1100139665e8eff9d85bf60be9f33beda7e0
